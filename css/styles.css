@@ -286,3 +286,224 @@ input, textarea, select, button {
 .image-grid-row-2 {
 grid-row: span 2;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+    .image-grid {
+    --num-cols: 2;
+    --row-height: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) { 
+
+    .hero-concert__info-content p {
+    font-size: 13px;
+    }
+
+    .hero-concert__image img {
+        align-items: center;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .navbar .logo {
+        width: 100px;
+        grid-column: 1 / 2;
+    }
+
+    .navbar .menu {
+        grid-column: 2 / 8;
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+    }
+
+    .hero-concert__image img {
+        align-items: center;
+        width: 250px;
+    }
+    
+    .hero-concert__info-content h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+        font-weight: 900;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .hero-concert__info-content p {
+        font-size: 10px;
+    }
+
+    .footer .follow-me {
+        display: none;
+    }
+
+    /*MAIN DISCOGRAPHY*/
+
+    .hero-discografia h3 {
+        font-size: 1.3em;
+    }
+    
+    .hero-discografia__info-content .albumes {
+        width: 200px;
+        height: 250px;
+        margin-right: 10px;
+    }
+
+    .hero-contact__info-content {
+        grid-column: 4 / 6;
+        grid-row: 3 / 6;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    
+    .hero-concert__image img {
+        align-items: center;
+        width: 210px;
+    }
+    
+    .hero-concert__info-content h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4em;
+        font-weight: 900;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .hero-concert__info-content p {
+        font-size: 9px;
+    }
+
+    .hero-discografia__info-content .albumes {
+        width: 170px;
+        height: 230px;
+        margin-right: 10px;
+    }
+
+    .hero {
+        height: 80vh;
+        background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .8)), url(../multimedia/bad-bg3);
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .hero-contact__info-content {
+        grid-column: 3 / 5;
+        grid-row: 3 / 6;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .navbar .logo {
+        width: 70px;
+        grid-column: 1 / 2;
+    }
+
+    .navbar .menu {
+        grid-column: 2 / 9;
+        display: flex;
+        justify-content: space-around;
+        font-size: 10px;
+    }
+
+    /* MAIN */
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+
+    /* FOOTER */
+
+    .footer .follow-me {
+        display: none;
+    }
+
+    .footer .social-network {
+        font-size: 1em;
+    }
+
+    .footer .listen-online h2 {
+        font-size: 20px;
+    }
+
+    .footer .listen-online .fa-solid {
+        font-size: 1.5em;
+    }
+
+    /* MAIN CONCERT */
+
+    .hero-concert__image img {
+        align-items: center;
+        width: 130px;
+    }
+    
+    .hero-concert__info-content h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.9em;
+        font-weight: 900;
+        text-align: center;
+        margin-left: 10px;
+    }
+    
+    .hero-concert__info-content p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        text-align: justify;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-size: 8px;
+    }
+
+    .hero-discografia__info-content .albumes {
+        width: 150px;
+        height: 210px;
+        margin-right: 10px;
+    }
+    .hero-contact__info-content {
+        grid-column: 1 / 3;
+        grid-row: 3 / 6;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .footer .listen-online h2 {
+        font-size: 15px;
+    }
+
+    .footer .listen-online .fa-solid {
+        font-size: 1em;
+    }
+
+    .footer .social-network {
+        font-size: 0.8em;
+    }
+
+    .hero-concert__image img {
+        align-items: center;
+        width: 100px;
+    }
+
+    .hero-discografia__info-content .albumes {
+        width: 130px;
+        height: 190px;
+        margin-right: 10px;
+    }
+
+    .hero-contact__info-content {
+        grid-column: 1 / 3;
+        grid-row: 3 / 6;
+        margin-left: 10px;
+    }
+}
