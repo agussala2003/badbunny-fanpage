@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bad Bunny</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/mediaQueries.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
@@ -12,21 +13,38 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
             <img src="../multimedia/logo-nav3.png" class="logo" alt="bad bunny logo">
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="conciertos.html">Conciertos</a></li>
-                <li><a href="discografia.html">Discografia</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discografia.html">Discografia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="conciertos.html">Conciertos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
 
     <main class="hero-gallery">
         <div class="image-grid">
-            <img class="image-grid-col-2 image-grid-row-2" src="../multimedia/bad-bunny-5.jpg" alt="imagen bad bunny">
+            <img class="image-grid-col-2 image-grid-row-2" src="../multimedia/bad-bunny-6.jpg" alt="imagen bad bunny">
             <img src="../multimedia/bad-bunny-1.jpg" alt="imagen bad bunny">
             <img src="../multimedia/bad-bunny-2.jpg" alt="imagen bad bunny">
             <img src="../multimedia/bad-bunny-3.jpg" alt="imagen bad bunny">
@@ -49,5 +67,6 @@
             <a target="_blank" href="https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X"><i class="fa-brands fa-spotify"></i></a>
         </div>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

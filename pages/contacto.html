@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bad Bunny</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/mediaQueries.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
@@ -12,29 +13,43 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
             <img src="../multimedia/logo-nav3.png" class="logo" alt="bad bunny logo">
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="conciertos.html">Conciertos</a></li>
-                <li><a href="discografia.html">Discografia</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discografia.html">Discografia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="conciertos.html">Conciertos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
 
     <main class="hero-contact">
-        <h2>¿Como podemos ayudarte?</h2>
-        <h3>Envianos un mensaje</h3>
-        <div class="hero-contact__info-content">
-            <label for="texto">Nombre:</label>
-            <input type="text" name="texto">
-            <label for="email">Email:</label>
-            <input type="email" name="email">
-            <label for="textarea">Mensaje:</label>
-            <textarea name="textarea" id="" cols="10" rows="10"></textarea>
-            <button>Reset</button>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Deje su comentario:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
     </main>
 
@@ -53,5 +68,6 @@
             <a target="_blank" href="https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X"><i class="fa-brands fa-spotify"></i></a>
         </div>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
