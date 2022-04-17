@@ -1,0 +1,187 @@
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+    .image-grid {
+    --num-cols: 2;
+    --row-height: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero-concert {
+        .hero-concert__info-content {
+            p {
+                font-size: 13px;
+            }
+        }
+        .hero-concert__image {
+            img {
+                align-items: center;
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        .logo {
+            width: 100px;
+            grid-column: 1 / 2;
+        }
+        .menu {
+            grid-column: 2 / 8;
+            display: flex;
+            justify-content: space-around;
+            font-size: 16px;
+        }
+    }
+    .hero-concert {
+        .hero-concert__info-content {
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.5em;
+                font-weight: 900;
+                text-align: center;
+                margin: 0;
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+        .hero-concert__image {
+            img {
+                align-items: center;
+                width: 250px;
+            }
+        }
+    }
+    .footer {
+        .listen-online {
+            h2 {
+                display: none;
+            }
+        }
+        .follow-me {
+            h2 {
+                display: none;
+            }
+        }
+    }
+
+    /*MAIN DISCOGRAPHY*/
+
+    .hero-discografia {
+        h3 {
+            font-size: 1.3em;
+        }
+        .hero-discografia__info-content {
+            .albumes {
+                width: 180px;
+                height: 230px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .hero-contact__info-content {
+        grid-column: 4 / 6;
+        grid-row: 3 / 6;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .hero-concert {
+        .hero-concert__info-content {
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.4em;
+                font-weight: 900;
+                text-align: center;
+                margin: 0;
+            }
+            p {
+                font-size: 9px;
+            }
+        }
+        .hero-concert__image {
+            img {
+                align-items: center;
+                width: 210px;
+            }
+        }
+    }
+    .hero-discografia {
+        .hero-discografia__info-content {
+            .albumes {
+                width: 130px;
+                height: 190px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .hero {
+        height: 80vh;
+        background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .8)), url(../multimedia/bad-bg3);
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        .info-content {
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-concert {
+        .hero-concert__info-content {
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 0.9em;
+                font-weight: 900;
+                text-align: center;
+                margin-left: 10px;
+            }
+            p {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                text-align: justify;
+                align-items: center;
+                margin-left: 20px;
+                margin-top: 10px;
+                font-size: 8px;
+            }
+        }
+        .hero-concert__image {
+            img {
+                align-items: center;
+                width: 150px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero-concert {
+        .hero-concert__info-content {
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.4em;
+                font-weight: 900;
+                text-align: center;
+                margin: 0;
+            }
+            p {
+                font-size: 7px;
+            }
+        }
+        .hero-concert__image {
+            img {
+                align-items: center;
+                width: 100px;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.footer {
+    display: grid;
+    height: 90px;
+    align-items: center;
+    background-color: #4d4d4d;
+    color: #fff;
+    grid-template-areas: 
+    "listen-online follow-me social-network";
+    .social-network {
+        grid-area: social-network;
+        font-size: 1.3em;
+        .fa-brands {
+            margin-right: 15px;
+            color: #fff;
+            cursor: pointer;
+            transition: all 1s;
+            &:hover {
+                color: #bababa;
+            }
+        }
+    }
+    .follow-me {
+        grid-area: follow-me;
+        text-align: center;
+        h2 {
+            font-size: 1.5em;
+        }
+    }
+    .listen-online {
+        grid-area: listen-online;
+        display: flex;
+        justify-content: center;
+        padding: 26px;
+        h2 {
+            font-size: 1.5em;
+        }
+        .fa-solid {
+        font-size: 1.5em;
+        margin-right: 15px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 1s;
+        &:hover {
+            color: #bababa;
+        }
+        }
+    }
+}
