@@ -1,0 +1,10 @@
+@mixin sizes ($width,$height,$margin-right) {
+    width: $width;
+    height: $height;
+    margin-right: $margin-right;    
+}
+
+$font: (
+    font-size: 1.5em,
+    font-weight: 900
+)

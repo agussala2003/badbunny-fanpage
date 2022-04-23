@@ -13,7 +13,7 @@
     }
     h3 {
         font-family: 'Montserrat', sans-serif !important;
-        font-size: 1.5em;
+        font-size: map-get($font,font-size);
         font-weight: 300;
     }
     p {
@@ -54,8 +54,8 @@
         grid-row: 2 / 8;
         h3 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.5em;
-            font-weight: 900;
+            font-size: map-get($font,font-size);
+            font-weight: map-get($font,font-weight);
             text-align: center;
             margin-bottom: 20px;
         }
@@ -91,31 +91,22 @@
 /* MAIN DISCOGRAFIA */
 
 .hero-discografia {
-    height: 80vh;
-    background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .8)), url(../multimedia/bad-bg2.jpg);
-    background-size: cover;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    color: #fff;
+    @extend.hero-concert;
     .hero-discografia__info-content {
         grid-column: 1 / 11;
         grid-row: 3 / 8;
         align-self: center;
         justify-self: center;
         .albumes {
-            width: 250px;
-            height: 300px;
-            margin-right: 10px;
+            @include sizes (250px,300px,10px)
         }
     }
     h3 {
         grid-column: 4 / 8;
         grid-row: 2 / 3;
         font-family: 'Montserrat', sans-serif;
-        font-size: 1.5em;
-        font-weight: 900;
+        font-size: map-get($font,font-size);
+        font-weight: map-get($font,font-weight);
         text-align: center;
     }
 }

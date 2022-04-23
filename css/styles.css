@@ -38,7 +38,7 @@
 }
 
 /*MAIN CONCERT*/
-.hero-concert {
+.hero-concert, .hero-discografia {
   height: 80vh;
   background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../multimedia/bad-bg2.jpg);
   background-size: cover;
@@ -48,29 +48,29 @@
   grid-template-rows: repeat(8, 1fr);
   color: #fff;
 }
-.hero-concert .hero-concert__image {
+.hero-concert .hero-concert__image, .hero-discografia .hero-concert__image {
   grid-column: 6/10;
   grid-row: 2/8;
   align-self: center;
   justify-self: center;
 }
-.hero-concert .hero-concert__image img {
+.hero-concert .hero-concert__image img, .hero-discografia .hero-concert__image img {
   align-items: center;
   width: 400px;
   margin-left: 50px;
 }
-.hero-concert .hero-concert__info-content {
+.hero-concert .hero-concert__info-content, .hero-discografia .hero-concert__info-content {
   grid-column: 1/6;
   grid-row: 2/8;
 }
-.hero-concert .hero-concert__info-content h3 {
+.hero-concert .hero-concert__info-content h3, .hero-discografia .hero-concert__info-content h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
   font-weight: 900;
   text-align: center;
   margin-bottom: 20px;
 }
-.hero-concert .hero-concert__info-content p {
+.hero-concert .hero-concert__info-content p, .hero-discografia .hero-concert__info-content p {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-align: justify;
@@ -97,16 +97,6 @@
 }
 
 /* MAIN DISCOGRAFIA */
-.hero-discografia {
-  height: 80vh;
-  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../multimedia/bad-bg2.jpg);
-  background-size: cover;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  color: #fff;
-}
 .hero-discografia .hero-discografia__info-content {
   grid-column: 1/11;
   grid-row: 3/8;
@@ -210,10 +200,10 @@
   }
 }
 @media screen and (max-width: 900px) {
-  .hero-concert .hero-concert__info-content p {
+  .hero-concert .hero-concert__info-content p, .hero-discografia .hero-concert__info-content p {
     font-size: 13px;
   }
-  .hero-concert .hero-concert__image img {
+  .hero-concert .hero-concert__image img, .hero-discografia .hero-concert__image img {
     align-items: center;
     width: 350px;
   }
@@ -230,17 +220,17 @@
     font-size: 16px;
   }
 
-  .hero-concert .hero-concert__info-content h3 {
+  .hero-concert .hero-concert__info-content h3, .hero-discografia .hero-concert__info-content h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.5em;
     font-weight: 900;
     text-align: center;
     margin: 0;
   }
-  .hero-concert .hero-concert__info-content p {
+  .hero-concert .hero-concert__info-content p, .hero-discografia .hero-concert__info-content p {
     font-size: 10px;
   }
-  .hero-concert .hero-concert__image img {
+  .hero-concert .hero-concert__image img, .hero-discografia .hero-concert__image img {
     align-items: center;
     width: 250px;
   }
@@ -268,17 +258,17 @@
   }
 }
 @media screen and (max-width: 580px) {
-  .hero-concert .hero-concert__info-content h3 {
+  .hero-concert .hero-concert__info-content h3, .hero-discografia .hero-concert__info-content h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.4em;
     font-weight: 900;
     text-align: center;
     margin: 0;
   }
-  .hero-concert .hero-concert__info-content p {
+  .hero-concert .hero-concert__info-content p, .hero-discografia .hero-concert__info-content p {
     font-size: 9px;
   }
-  .hero-concert .hero-concert__image img {
+  .hero-concert .hero-concert__image img, .hero-discografia .hero-concert__image img {
     align-items: center;
     width: 210px;
   }
@@ -302,14 +292,14 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .hero-concert .hero-concert__info-content h3 {
+  .hero-concert .hero-concert__info-content h3, .hero-discografia .hero-concert__info-content h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 0.9em;
     font-weight: 900;
     text-align: center;
     margin-left: 10px;
   }
-  .hero-concert .hero-concert__info-content p {
+  .hero-concert .hero-concert__info-content p, .hero-discografia .hero-concert__info-content p {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     text-align: justify;
@@ -318,23 +308,23 @@
     margin-top: 10px;
     font-size: 8px;
   }
-  .hero-concert .hero-concert__image img {
+  .hero-concert .hero-concert__image img, .hero-discografia .hero-concert__image img {
     align-items: center;
     width: 150px;
   }
 }
 @media screen and (max-width: 320px) {
-  .hero-concert .hero-concert__info-content h3 {
+  .hero-concert .hero-concert__info-content h3, .hero-discografia .hero-concert__info-content h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.4em;
     font-weight: 900;
     text-align: center;
     margin: 0;
   }
-  .hero-concert .hero-concert__info-content p {
+  .hero-concert .hero-concert__info-content p, .hero-discografia .hero-concert__info-content p {
     font-size: 7px;
   }
-  .hero-concert .hero-concert__image img {
+  .hero-concert .hero-concert__image img, .hero-discografia .hero-concert__image img {
     align-items: center;
     width: 100px;
   }
